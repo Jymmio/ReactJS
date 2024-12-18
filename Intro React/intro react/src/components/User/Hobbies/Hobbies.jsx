@@ -1,3 +1,7 @@
+import PropTypes from 'prop-types';
+Hobbies.propTypes = {
+  hobbies: PropTypes.array.isRequired
+};
 export function Hobbies({hobbies}) {
 /*<li>Musique</li>
             <li>Anime</li>
