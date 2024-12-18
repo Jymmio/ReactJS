@@ -12,7 +12,7 @@ export function Hobbies({hobbies}) {
     hobbyInput = event.target.value;
   }
   function addHobby(){
-    let temp = hobby;
+    let temp = [...hobby];
     temp.push(hobbyInput);
     hobbiesFunction(temp);
     console.log(hobby);
