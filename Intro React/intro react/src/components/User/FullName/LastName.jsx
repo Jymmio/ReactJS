@@ -1,3 +1,7 @@
+import PropTypes from 'prop-types';
+LastName.propTypes = {
+  nom: PropTypes.string.isRequired
+};
 export function LastName({nom}) {
 
     return (

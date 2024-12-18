@@ -1,8 +1,15 @@
+import PropTypes from 'prop-types';
 import { FirstName } from "./FullName/FirstName";
 import { LastName } from "./FullName/LastName";
 import { Hobbies } from "./Hobbies/Hobbies";
 import './User.css';
-
+User.propTypes = {
+  fullname: PropTypes.shape({
+    prenom: PropTypes.string.isRequired,
+    nom: PropTypes.string.isRequired
+  }),
+  hobbies: PropTypes.array.isRequired
+}
 
 export function User({fullname, hobbies}) {
 
