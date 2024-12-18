@@ -1,8 +1,8 @@
-export function FirstName() {
+export function FirstName({prenom}) {
 
     return (
       <>
-        <h4>Nadjim</h4>
+        <h4>{prenom}</h4>
       </>
     )
   }

@@ -8,12 +8,18 @@ import { User } from './components/User/User'
 import { Player } from './components/Player/Player'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const props = {
+    fullname: {
+      prenom: "Nadjim",
+      nom: "BOUZIDI"
+    },
+    hobbies: ["Music", "Anime", "Chess", "Video games"]
+  }
 
   return (
     <>
       <Player />
-      <User />
+      <User  fullname={props.fullname} hobbies={props.hobbies}/>
     </>
   )
 }
