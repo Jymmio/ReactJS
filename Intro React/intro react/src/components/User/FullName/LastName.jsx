@@ -1,8 +1,8 @@
-export function LastName() {
+export function LastName({nom}) {
 
     return (
       <>
-        <h4>BOUZIDI</h4>
+        <h4>{nom}</h4>
       </>
     )
   }

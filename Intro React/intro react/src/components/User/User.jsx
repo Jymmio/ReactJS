@@ -3,16 +3,17 @@ import { LastName } from "./FullName/LastName";
 import { Hobbies } from "./Hobbies/Hobbies";
 import './User.css';
 
-export function User() {
+
+export function User({fullname, hobbies}) {
 
     return (
       <>
         <div id="fullname">
-            <FirstName />
-            <LastName />
+            <FirstName prenom={fullname.prenom}/>
+            <LastName nom={fullname.nom}/>
         </div>
         <div>
-            <Hobbies />
+            <Hobbies hobbies={hobbies}/>
         </div>
       </>
     )

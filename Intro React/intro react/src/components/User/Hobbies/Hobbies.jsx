@@ -1,12 +1,14 @@
-export function Hobbies() {
-
+export function Hobbies({hobbies}) {
+/*<li>Musique</li>
+            <li>Anime</li>
+            <li>Jeux vidéos</li>
+            <li>Jeux d'echecs</li>*/
     return (
       <>
         <ul>
-            <li>Musique</li>
-            <li>Anime</li>
-            <li>Jeux vidéos</li>
-            <li>Jeux d'echecs</li>
+        {hobbies.map((hobby, index) => (
+        <li key={index}>{hobby}</li>
+      ))}
         </ul>
       </>
     )
